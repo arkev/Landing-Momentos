@@ -1,4 +1,19 @@
-#momentos,
+@import "variab";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+@lila: #9d9cd8;
+@light: 300;
+@regular: 400;
+@bold: 700;
+.lato(@weight: @regular) {
+    font-family: 'Lato', sans-serif;
+    font-weight: @weight;
+}
+
+html {
+    .lato();
+    font-size: 16px;
+}
+
 #cta,
 #bolitas,
 #beneficios,
@@ -16,8 +31,87 @@ footer {
     margin-left: 0;
 }
 
-@media only screen and (min-width: 48em) {
+@media @tablet {
     header div:nth-child(2) {
         order: -1;
+    }
+}
+
+#momento1,
+#momento2,
+#momento3,
+#momento4,
+#momento5 {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+    color: white;
+    .bkgcolor {
+        background-color: @lila;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bkgimagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    h2 {
+        margin-top: 2em;
+        margin-bottom: .2em;
+        text-align: center;
+        width: 100%;
+        z-index: 3;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+    section {
+        background-color: rgba(0, 0, 0, .5);
+        width: 65%;
+        padding: 3px;
+        z-index: 3;
+        position: relative;
+        img {
+            width: 34px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: .5em .5em .5em 2em;
+        }
+        div {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+            h3 {
+                display: block;
+                text-transform: uppercase;
+                font-size: 0.875rem;
+                font-style: italic;
+                font-weight: 400;
+                margin: 0;
+                vertical-align: top;
+            }
+            p {
+                display: block;
+                font-size: .6875rem;
+                font-style: italic;
+                font-weight: 400;
+                margin: 0;
+                vertical-align: top;
+            }
+        }
+        .indicador {
+            position: absolute;
+            z-index: 55;
+            width: 160px;
+            margin: 0;
+            border-radius: 0;
+            left: 4em;
+        }
     }
 }
