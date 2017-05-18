@@ -75,6 +75,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/foto5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2314,
+		"inputAbbreviatedPath": "\/images\/foto5.jpg",
+		"outputAbbreviatedPath": "\/images\/foto5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/momento1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
