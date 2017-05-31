@@ -9,7 +9,6 @@
 @bold: 700;
 @gris: #494552;
 @crimson: #BB1645;
-
 .lato(@weight: @regular,
 @color: @gris) {
     font-family: 'Lato', sans-serif;
@@ -423,12 +422,32 @@ footer {
         text-align: center;
         .font-size(14);
     }
-    .sm{
+    .sm {
         @media @tablet {
             width: 32px;
         }
         @media @desktop {
             width: 44px;
+        }
+    }
+    .logo {
+        width: 100%;
+        .opacity();
+        max-width: 125px;
+        &[alt="Momentos en línea"] {
+            width: 80%;
+        }
+        @media @tablet {
+            max-width: 155px;
+            &[alt="Momentos en línea"] {
+                width: 75%;
+            }
+        }
+        @media @desktop {
+            max-width: 180px;
+            &[alt="Momentos en línea"] {
+                width: 50%;
+            }
         }
     }
 }
