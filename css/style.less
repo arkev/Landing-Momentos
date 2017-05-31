@@ -10,11 +10,13 @@
 @gris: #494552;
 @crimson: #BB1645;
 
-.lato(@weight: @regular, @color: @gris) {
+.lato(@weight: @regular,
+@color: @gris) {
     font-family: 'Lato', sans-serif;
     font-weight: @weight;
     color: @gris;
 }
+
 .underline_green(@padding-bottom: 32px,
 @margin-bottom: 60px) {
     padding-bottom: @padding-bottom;
@@ -350,9 +352,9 @@ button {
     }
 }
 
-#video{
+#video {
     margin: 3em 0;
-    .box{
+    .box {
         width: 100%;
         height: 34vh;
         @media @laptop {
@@ -364,8 +366,8 @@ button {
     }
 }
 
-#testimonios{
-    h2{
+#testimonios {
+    h2 {
         .font-size(32);
         text-align: center;
         color: #8f71d1;
@@ -373,47 +375,51 @@ button {
         font-style: italic;
         line-height: 1.5em;
     }
-    img{
+    img {
         width: 77px;
         border-radius: 50%;
         margin-top: 1em;
     }
-    h3{
+    h3 {
         text-transform: uppercase;
         margin: 0.4em 0;
     }
-    p{
+    p {
         font-style: italic;
         margin-top: 0;
     }
 }
 
-#cta2{
+#cta2 {
     margin-top: 2em;
     @media @tablet {
         background-color: #e6e6e6;
         padding: 22px 0;
     }
-    img{
+    img {
         display: none;
-        @media @tablet{
+        @media @tablet {
             display: block;
         }
     }
-    p{
+    p {
         color: #8f71d1;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         .font-size(20);
     }
-    button{
-        @media @tablet{
+    button {
+        @media @tablet {
             margin: 0 auto;
             .font-size(16);
         }
     }
 }
 
-footer{
+footer {
     background: #2e194a;
     padding: 23px 0;
+    p {
+        color: white;
+        text-align: center;
+    }
 }
