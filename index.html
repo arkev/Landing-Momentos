@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Momentos | UM Virtual</title>
-    <meta name="description" content="">
+    <meta name="description" content="UM Virtual te ofrece la oportunidad de preparate profesionalmente y colaborar contigo en aprovechar, proyectar y darle sentido a tu vida.">
     <link href="https://umvirtual.org/wp-content/uploads/favicon.png" type="image/x-icon" rel="shortcut icon">
     <link rel="stylesheet" href="https://umvirtual.org/bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="https://umvirtual.org/bower_components/flexboxgrid/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="https://umvirtual.org/bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://umvirtual.org/bower_components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
@@ -27,6 +28,80 @@
         </div>
     </header>
     <!--/Header-->
+    
+    <!-- Modal -->
+    <div class="mask" role="dialog"></div>
+    <div class="modal" role="alert">
+        <button class="close" role="button">X</button>
+        <form class="form-view" id="agile-form" action="https://umvirtual.agilecrm.com/formsubmit" method="POST" accept-charset="UTF-8">
+            <fieldset>
+                <div>
+                    <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Creando Oportunidades">
+                    <input type="hidden" id="_agile_domain" name="_agile_domain" value="umvirtual">
+                    <input type="hidden" id="_agile_api" name="_agile_api" value="kgvg33jvsno6dgik0eqpgb0cgl">
+                    <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="http://umvirtual.org/creando-oportunidades/gracias.html">
+                    <input type="hidden" id="_agile_form_id_tags" name="tags" value="creando oportunidades, lead, educación formal">
+                </div>
+                <!-- Text input-->
+                <div class="agile-group required-control">
+                    <div class="agile-field-xlarge agile-field">
+                        <input id="nombre-3" name="first_name" type="text" placeholder="Nombre(s)" class="agile-height-default" required tabindex="1">
+                    </div>
+                    <div class="agile-custom-clear"></div>
+                </div>
+                <!-- Text input-->
+                <div class="agile-group required-control">
+                    <div class="agile-field-xlarge agile-field">
+                        <input id="Apellidos" name="last_name" type="text" placeholder="Apellidos" class="agile-height-default" required tabindex="2">
+                    </div>
+                    <div class="agile-custom-clear"></div>
+                </div>
+                <!-- Text input-->
+                <div class="agile-group required-control">
+                    <div class="agile-field-xlarge agile-field">
+                        <input id="email" name="email" type="email" placeholder="Correo electrónico" class="agile-height-default" required tabindex="3">
+                    </div>
+                    <div class="agile-custom-clear"></div>
+                </div>
+                <!-- Text input-->
+                <div class="agile-group">
+                    <div class="agile-field-xlarge agile-field">
+                        <input id="telefono" name="phone" type="tel" placeholder="Teléfono (Opcional)" class="agile-height-default" tabindex="4">
+                    </div>
+                    <div class="agile-custom-clear"></div>
+                </div>
+                <!-- Select Basic -->
+                <div class="agile-group">
+                    <div class="agile-field-xlarge agile-field">
+                        <select id="programa" name="Programa formal" class="agile-height-default" required tabindex="5">
+                            <option value="">Programa</option>
+                            <option value="Técnica en música">Técnica en Música</option>
+                            <option value="Lic. Administración de empresas">Lic. Administración de Empresas</option>
+                            <option value="Lic. en Teología">Lic. en Teología</option>
+                            <option value="Maestría en Educación">Maestría en Educación</option>
+                            <option value="Maestría en Recursos Humanos">Maestría en Recursos Humanos</option>
+                            <option value="Maestría en Finanzas">Maestría en Finanzas</option>
+                            <option value="Maestría en Relaciones familiares">Maestría en Relaciones familiares</option>
+                            <option value="Maestría en Ingeniería del Software">Maestría en Ingeniería del Software</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="agile-group row center-xs">
+                    <div class="agile-field col-xs">
+                        <div class="box">
+                            <button type="submit" class="agile-button" tabindex="6">Solicitar Información</button><span id="agile-error-msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <section id="respuesta">
+                
+                </section>
+            </fieldset>
+        </form>
+    </div>
+    <!-- /Modal -->
 
     <!--Momentos-->
     <section class="row" id="momentos">
@@ -120,7 +195,7 @@
     <!--CTA-->
     <section class="row center-xs wow fadeIn" id="cta">
         <div class="col-xs-12 col-sm-7 col-md-5">
-            <button class="box">Quiero comenzar a estudiar</button>
+            <button class="box show">Quiero comenzar a estudiar</button>
         </div>
     </section>
     <!--/CTA-->
@@ -217,7 +292,7 @@
             <div class="box">
                 <img src="images/foto1.jpg" alt="Daneley Lizarazo Sáenz">
                 <h3>Daneley Lizarazo Sáenz</h3>
-                <p>“Decidí estudiar en UM Virtual (Universidad de Montemorelos en línea) por dor razones fundamentales; en primer lugar quiero apoyar la educación con principios adventistas, y por otro lado, reconozco la calidad educativa y el renombre mundial que tiene esta universidad.”</p>
+                <p>“Decidí estudiar en UM Virtual (Universidad de Montemorelos en línea) por dos razones fundamentales; en primer lugar quiero apoyar la educación con principios adventistas, y por otro lado, reconozco la calidad educativa y el renombre mundial que tiene esta universidad.”</p>
             </div>
         </div>
         <!--Columna 2-->
@@ -250,7 +325,7 @@
             <div class="box">
                 <img src="images/foto5.jpg" alt="Eduardo José Liñan Berrio">
                 <h3>Eduardo José Liñan Berrio</h3>
-                <p>“Escogí a Um Virtual por su prestigio y calidad, esta fue una elección que respondía a mi búsqueda de experiencia y universalidad. Me siento orgulloso de formar parte de ella.”</p>
+                <p>“Escogí a UM Virtual por su prestigio y calidad, esta fue una elección que respondía a mi búsqueda de experiencia y universalidad. Me siento orgulloso de formar parte de ella.”</p>
             </div>
         </div>
     </section>
@@ -306,6 +381,77 @@
     <script>
         new WOW().init();
     </script>
+    <script src="https://umvirtual.org/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Formulario -->
+    <script src="https://raw.githubusercontent.com/matmancini/html5form/master/dist/html5form.min.js"></script>
+    <script src="/js/min/programacion-min.js"></script>
+    <!-- Google Code para analitycs -->
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-49916110-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- Google Code para etiquetas de remarketing -->
+    <script>
+        /* <![CDATA[ */
+        var google_conversion_id = 957296960;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+    <script src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="Doble click" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/957296960/?value=0&amp;guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    <!-- End Google Code para etiquetas de remarketing -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '954439487953611');
+        fbq('track', "PageView");
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=954439487953611&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Code de Agile CRM-->
+    <script type="text/javascript" src="https://umvirtual.agilecrm.com/stats/min/agile-min.js"></script> 
+    <script type="text/javascript" > 
+        _agile.set_account('nnrj2h9osqla66t5rf6h2ai1sr', 'umvirtual'); 
+        _agile.track_page_view(); 
+        _agile_execute_web_rules(); 
+    </script>
+    <!-- /Tracking Code de Agile CRM-->
 </body>
 
 </html>
