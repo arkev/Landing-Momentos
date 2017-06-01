@@ -19,7 +19,6 @@ button {
   border: 0;
   text-transform: uppercase;
   margin: 30px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 button:hover {
@@ -34,10 +33,7 @@ button:active {
 }
 @media only screen and (min-width: 48em) {
   header div:nth-child(2) {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
 }
 #momentos .col-xs-12 {
@@ -105,8 +101,7 @@ button:active {
   top: 0;
   left: 0;
   z-index: 2;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #momento1 h2,
 #momento2 h2,
@@ -303,7 +298,6 @@ button:active {
 #bolitas .bolita1 {
   background: #a892da;
   /* Old browsers */
-  background: -webkit-linear-gradient(left, #a892da 0%, #96a4d5 100%);
   background: linear-gradient(to right, #a892da 0%, #96a4d5 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a892da', endColorstr='#96a4d5',GradientType=1 );
@@ -315,7 +309,6 @@ button:active {
 #bolitas .bolita2 {
   background: #99a0d5;
   /* Old browsers */
-  background: -webkit-linear-gradient(left, #99a0d5 0%, #8ab2cf 100%);
   background: linear-gradient(to right, #99a0d5 0%, #8ab2cf 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99a0d5', endColorstr='#8ab2cf',GradientType=1 );
@@ -328,7 +321,6 @@ button:active {
 #bolitas .bolita3 {
   background: #6bc7c5;
   /* Old browsers */
-  background: -webkit-linear-gradient(left, #6bc7c5 0%, #66b0c3 100%);
   background: linear-gradient(to right, #6bc7c5 0%, #66b0c3 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bc7c5', endColorstr='#66b0c3',GradientType=1 );
@@ -341,7 +333,6 @@ button:active {
 #bolitas .bolita4 {
   background: #605aad;
   /* Old browsers */
-  background: -webkit-linear-gradient(left, #605aad 0%, #7459a3 100%);
   background: linear-gradient(to right, #605aad 0%, #7459a3 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#605aad', endColorstr='#7459a3',GradientType=1 );
@@ -354,7 +345,6 @@ button:active {
 #bolitas .bolita5 {
   background: #aa5683;
   /* Old browsers */
-  background: -webkit-linear-gradient(left, #aa5683 0%, #c85473 100%);
   background: linear-gradient(to right, #aa5683 0%, #c85473 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa5683', endColorstr='#c85473',GradientType=1 );
@@ -537,10 +527,12 @@ footer .logo[alt="Momentos en línea"] {
   right: 0;
   width: 35px;
   height: 30px;
-  background: #9d9cd8;
+  background: #BB1645;
   color: white;
   cursor: pointer;
   border: 0;
+  padding: 0;
+  margin: 0;
 }
 .mask {
   position: fixed;
@@ -552,12 +544,11 @@ footer .logo[alt="Momentos en línea"] {
   z-index: 50;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 .modal {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 90%;
   max-width: 400px;
@@ -567,10 +558,8 @@ footer .logo[alt="Momentos en línea"] {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
-  -webkit-transform: translateY(45px);
-          transform: translateY(45px);
+  transform: translateY(45px);
 }
 .active {
   visibility: visible;
@@ -579,8 +568,7 @@ footer .logo[alt="Momentos en línea"] {
 .active + .modal {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 form fieldset {
   border: 0;
