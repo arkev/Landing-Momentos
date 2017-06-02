@@ -21,3 +21,7 @@ $(document).keyup(function (e) {
         closeModal();
     }
 });
+
+$(".url").on('click', function(){
+     window.location = "https://umvirtual.org";    
+});

@@ -486,8 +486,8 @@ footer {
 // Modal
 .modal {
     position: fixed;
-    top: 40%;
-    left: 50%;
+    top: 48%;
+    left: 67%;
     width: 90%;
     max-width: 400px;
     margin-left: -200px;
@@ -498,6 +498,10 @@ footer {
     opacity: 0;
     transition: 0.5s ease-out;
     transform: translateY(45px);
+    @media @tablet {
+        top: 40%;
+        left: 50%;
+    }
 }
 
 // Class Active
@@ -520,13 +524,13 @@ form {
     input,
     select {
         width: 90%;
-        margin: 1em auto;
+        margin: .5em auto;
         display: block;
         background: white;
         border: 1px solid #b3b3b3;
         padding: 6px;
         color: #b3b3b3;
-        height: 2em;
+        height: 1.6em;
         .font-size(21);
     }
     input:focus {
@@ -534,10 +538,39 @@ form {
     }
     input#nombre-3 {
         margin-top: 2em;
-        margin-bottom: 1em!important;
+        margin-bottom: .5em!important;
     }
     select {
-        margin: 1em auto;
+        width: 94%;
+        height: 2.1em;
     }
-    button {}
+    button {
+        margin: 1em auto;
+        .font-size(16);
+        padding: 15px;
+    }
+}
+
+#gracias {
+    background: url(../images/imagen-gracias-momentos.jpg);
+    background-size: cover;
+    padding: 110px 1em;
+    h2,h3{
+        text-align: center;
+        color: white;
+    }
+    h2 {
+        text-transform: uppercase;
+        .font-size(32);
+        font-weight: @regular;
+        &::after {
+            .underline_green();
+            border-bottom: 2px solid white;
+            max-width: 640px;
+        }
+    }
+    h3 {
+        .font-size(32);
+        font-weight:@light;
+    }
 }

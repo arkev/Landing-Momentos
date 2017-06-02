@@ -31,6 +31,15 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/gracias.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gracias.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/images\/foto1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -82,6 +91,17 @@
 		"initialSize": 2314,
 		"inputAbbreviatedPath": "\/images\/foto5.jpg",
 		"outputAbbreviatedPath": "\/images\/foto5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/imagen-gracias-momentos.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123010,
+		"inputAbbreviatedPath": "\/images\/imagen-gracias-momentos.jpg",
+		"outputAbbreviatedPath": "\/images\/imagen-gracias-momentos.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
