@@ -65,11 +65,13 @@ button {
 }
 
 #momentos {
+    display: none;
     .col-xs-12 {
         padding: 0;
     }
     @media @tablet {
         padding: 0 2em;
+        display: flex;
         .col-sm-6 {
             padding: 0 4px;
         }
@@ -555,7 +557,8 @@ form {
     background: url(../images/imagen-gracias-momentos.jpg);
     background-size: cover;
     padding: 110px 1em;
-    h2,h3{
+    h2,
+    h3 {
         text-align: center;
         color: white;
     }
@@ -571,6 +574,275 @@ form {
     }
     h3 {
         .font-size(32);
-        font-weight:@light;
+        font-weight: @light;
     }
+}
+
+//-------------------------------------------
+.slider {
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #eee;
+    @media @tablet{
+        display: none;
+    }
+}
+
+.slider__inner {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.slider__slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 500%;
+    height: 100%;
+    overflow-y: hidden;
+    -webkit-transition: margin-left 0.4s;
+    transition: margin-left 0.4s;
+}
+
+.slider__slide {
+    display: block;
+    float: left;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider__slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.slider__radiobox-label {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slider__radiobox-label--item {
+    bottom: 6%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.3;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider__radiobox-label--item:hover {
+    opacity: 0.5;
+}
+
+.slider__radiobox-label--item--1 {
+    margin-left: -24px;
+}
+
+.slider__radiobox-label--item--2 {
+    margin-left: -9px;
+}
+
+.slider__radiobox-label--item--3 {
+    margin-left: 6px;
+}
+
+.slider__radiobox-label--item--4 {
+    margin-left: 21px;
+}
+
+.slider__radiobox-label--item--5 {
+    margin-left: 36px;
+}
+
+.slider__radiobox-label--prev,
+.slider__radiobox-label--next {
+    display: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 0;
+    border: 10px solid white;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    opacity: 0;
+    -webkit-transition: left 0.2s, right 0.2s, opacity 0.2s;
+    transition: left 0.2s, right 0.2s, opacity 0.2s;
+}
+
+.slider__radiobox-label--prev {
+    left: -6%;
+    border-left: 0;
+    border-right-width: 17px;
+}
+
+.slider__radiobox-label--next {
+    right: -6%;
+    border-right: 0;
+    border-left-width: 17px;
+}
+
+.slider__radiobox {
+    display: none;
+}
+
+.slider__radiobox--1:checked ~ .slider__slides {
+    margin-left: 0;
+}
+
+.slider__radiobox--2:checked ~ .slider__slides {
+    margin-left: -100%;
+}
+
+.slider__radiobox--3:checked ~ .slider__slides {
+    margin-left: -200%;
+}
+
+.slider__radiobox--4:checked ~ .slider__slides {
+    margin-left: -300%;
+}
+
+.slider__radiobox--5:checked ~ .slider__slides {
+    margin-left: -400%;
+}
+
+.slider__radiobox--1:checked + .slider__radiobox-label--item--1,
+.slider__radiobox--2:checked + .slider__radiobox-label--item--2,
+.slider__radiobox--3:checked + .slider__radiobox-label--item--3,
+.slider__radiobox--4:checked + .slider__radiobox-label--item--4,
+.slider__radiobox--5:checked + .slider__radiobox-label--item--5 {
+    opacity: 1;
+}
+
+.slider__radiobox--1:checked ~ .slider__radiobox-label--prev--5,
+.slider__radiobox--1:checked ~ .slider__radiobox-label--next--2,
+.slider__radiobox--2:checked ~ .slider__radiobox-label--prev--1,
+.slider__radiobox--2:checked ~ .slider__radiobox-label--next--3,
+.slider__radiobox--3:checked ~ .slider__radiobox-label--prev--2,
+.slider__radiobox--3:checked ~ .slider__radiobox-label--next--4,
+.slider__radiobox--4:checked ~ .slider__radiobox-label--prev--3,
+.slider__radiobox--4:checked ~ .slider__radiobox-label--next--5,
+.slider__radiobox--5:checked ~ .slider__radiobox-label--prev--4,
+.slider__radiobox--5:checked ~ .slider__radiobox-label--next--1 {
+    display: block;
+}
+
+.slider:hover .slider__radiobox-label--prev,
+.slider:hover .slider__radiobox-label--next {
+    opacity: 1;
+}
+
+.slider:hover .slider__radiobox-label--prev {
+    left: 6%;
+}
+
+.slider:hover .slider__radiobox-label--next {
+    right: 6%;
+}
+
+.slider__slide--1,
+.slider__slide--2,
+.slider__slide--3,
+.slider__slide--4,
+.slider__slide--5 {
+    h2 {
+        text-align: center;
+        color: white;
+        .font-size(18);
+    }
+    section {
+        background-color: rgba(0, 0, 0, .5);
+        width: 83%;
+        padding: 3px;
+        z-index: 3;
+        position: relative;
+        max-width: 300px;
+        img {
+            width: 34px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: .5em .5em .5em 2em;
+        }
+        div {
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+            h3 {
+                display: block;
+                color: white;
+                text-transform: uppercase;
+                .font-size(14);
+                font-style: italic;
+                font-weight: 400;
+                margin: 0;
+                vertical-align: top;
+            }
+            p {
+                display: block;
+                .font-size(11);
+                font-style: italic;
+                font-weight: 400;
+                margin: 0;
+                vertical-align: top;
+                color: white;
+            }
+        }
+    }
+    &::before {
+        content: "";
+        background: black;
+        background-blend-mode: multiply;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index:-1;
+        .opacity(.3);
+    }
+}
+
+.slider__slide--1 {
+    background: url(../images/momento1.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.slider__slide--2 {
+    background: url(../images/momento2.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.slider__slide--3 {
+    background: url(../images/momento3.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.slider__slide--4 {
+    background: url(../images/momento4.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.slider__slide--5 {
+    background: url(../images/momento5.jpg);
+    background-size: cover;
+    z-index: 0;
 }
