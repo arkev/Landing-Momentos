@@ -336,7 +336,8 @@ button {
     }
 }
 
-#parrafos {
+#parrafos,
+#programas {
     .font-size(22);
     text-align: left;
     .col-xs-12:first-child {
@@ -353,17 +354,11 @@ button {
     }
 }
 
-#video {
-    margin: 3em 0;
-    .box {
-        width: 100%;
-        height: 34vh;
-        @media @laptop {
-            height: 47vh;
-        }
-        @media @bigScreen {
-            height: 64vh;
-        }
+#programas {
+    margin: 2rem 0 3rem;
+    img {
+        width: 32px;
+        margin-right: 12px;
     }
 }
 
@@ -519,6 +514,57 @@ footer {
     transform: translateY(0);
 }
 
+// Modal2
+#video {
+    position: fixed;
+    top: 55%;
+    left: 55%;
+    width: 90%;
+    max-width: 400px;
+    margin-left: -200px;
+    margin-top: -220px;
+    background: white;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: translateY(45px);
+    @media @tablet {
+        top: 40%;
+        left:30%;
+        max-width: 800px;
+    }
+    @media @laptop {
+        left:35%;
+    }
+    @media @bigScreen {
+        max-width: 900px;
+    }
+    iframe {
+        width: 100%;
+        height: 22vh;
+        @media @tablet {
+            height: 50vh;
+        }
+        @media @laptop {
+            height: 55vh;
+        }
+    }
+}
+
+// Class Active
+.activo {
+    visibility: visible;
+    opacity: 1;
+}
+
+// When active class is added, that affects the modal class
+.activo + #video {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 form {
     fieldset {
         border: 0;
@@ -586,7 +632,7 @@ form {
     margin: 0 auto;
     position: relative;
     background: #eee;
-    @media @tablet{
+    @media @tablet {
         display: none;
     }
 }
@@ -812,7 +858,7 @@ form {
         width: 100%;
         height: 100%;
         position: absolute;
-        z-index:-1;
+        z-index: -1;
         .opacity(.3);
     }
 }
@@ -845,4 +891,14 @@ form {
     background: url(../images/momento5.jpg);
     background-size: cover;
     z-index: 0;
+}
+
+#videoNew {
+    h1 {
+        font-weight: @light;
+        .font-size(36);
+        text-align: center;
+        margin: 3rem 0 1.5rem;
+        color: #8f71d1;
+    }
 }

@@ -2,565 +2,623 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>Momentos | UM Virtual</title>
-    <meta name="description" content="UM Virtual te ofrece la oportunidad de preparate profesionalmente y colaborar contigo en aprovechar, proyectar y darle sentido a tu vida.">
-    <link href="https://umvirtual.org/wp-content/uploads/favicon.png" type="image/x-icon" rel="shortcut icon">
-    <link rel="stylesheet" href="https://umvirtual.org/bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="https://umvirtual.org/bower_components/flexboxgrid/css/flexboxgrid.min.css">
-    <link rel="stylesheet" href="https://umvirtual.org/bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://umvirtual.org/bower_components/modernizr/modernizr.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Momentos | UM Virtual</title>
+	<meta name="description" content="UM Virtual te ofrece la oportunidad de preparate profesionalmente y colaborar contigo en aprovechar, proyectar y darle sentido a tu vida.">
+	<link href="https://umvirtual.org/wp-content/uploads/favicon.png" type="image/x-icon" rel="shortcut icon">
+	<link rel="stylesheet" href="https://umvirtual.org/bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="https://umvirtual.org/bower_components/flexboxgrid/css/flexboxgrid.min.css">
+	<link rel="stylesheet" href="https://umvirtual.org/bower_components/animate.css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://umvirtual.org/bower_components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
-    <!--Header-->
-    <header class="row center-xs middle-xs">
-        <div class="col-xs-12 col-sm-4">
-            <img src="images/momentos.svg" alt="Momentos en línea" class="box" width="100%">
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <img src="images/umvirtual.svg" alt="UM Virtual" class="box" width="100%">
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <img src="images/um.svg" alt="Universidad de Montemorelos" class="box" width="100%">
-        </div>
-    </header>
-    <!--/Header-->
-    
-    <!-- Modal -->
-    <div class="mask" role="dialog"></div>
-    <div class="modal" role="alert">
-        <button class="close" role="button">X</button>
-        <form class="form-view" id="agile-form" action="https://umvirtual.agilecrm.com/formsubmit" method="POST" accept-charset="UTF-8">
-            <fieldset>
-                <div>
-                    <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Momentos">
-                    <input type="hidden" id="_agile_domain" name="_agile_domain" value="umvirtual">
-                    <input type="hidden" id="_agile_api" name="_agile_api" value="nnrj2h9osqla66t5rf6h2ai1sr">
-                    <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="https://umvirtual.org/momentos/gracias.html">
-                    <input type="hidden" id="_agile_form_id_tags" name="tags" value="momentos, lead, educación formal">
-                    <input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5765026858139648">
-                </div>
-                <!-- Text input-->
-                <div class="agile-group required-control">
-                    <div class="agile-field-xlarge agile-field">
-                        <input id="nombre-3" name="first_name" type="text" placeholder="Nombre(s)" class="agile-height-default" required tabindex="1">
-                    </div>
-                    <div class="agile-custom-clear"></div>
-                </div>
-                <!-- Text input-->
-                <div class="agile-group required-control">
-                    <div class="agile-field-xlarge agile-field">
-                        <input id="Apellidos" name="last_name" type="text" placeholder="Apellidos" class="agile-height-default" required tabindex="2">
-                    </div>
-                    <div class="agile-custom-clear"></div>
-                </div>
-                <!-- Text input-->
-                <div class="agile-group required-control">
-                    <div class="agile-field-xlarge agile-field">
-                        <input id="email" name="email" type="email" placeholder="Correo electrónico" class="agile-height-default" required tabindex="3">
-                    </div>
-                    <div class="agile-custom-clear"></div>
-                </div>
-                <!-- Text input-->
-                <div class="agile-group">
-                    <div class="agile-field-xlarge agile-field">
-                        <input id="telefono" name="phone" type="tel" placeholder="Teléfono (Opcional)" class="agile-height-default" tabindex="4">
-                    </div>
-                    <div class="agile-custom-clear"></div>
-                </div>
-                <!-- Select Basic -->
-                <div class="agile-group">
-                    <div class="agile-field-xlarge agile-field">
-                        <select id="programa" name="Programa formal" class="agile-height-default" required tabindex="5">
-                            <option value="">Programa</option>
-                            <option value="Técnica en música">Técnica en Música</option>
-                            <option value="Lic. Administración de empresas">Lic. Administración de Empresas</option>
-                            <option value="Lic. en Teología">Lic. en Teología</option>
-                            <option value="Maestría en Educación">Maestría en Educación</option>
-                            <option value="Maestría en Recursos Humanos">Maestría en Recursos Humanos</option>
-                            <option value="Maestría en Finanzas">Maestría en Finanzas</option>
-                            <option value="Maestría en Relaciones familiares">Maestría en Relaciones familiares</option>
-                            <option value="Maestría en Ingeniería del Software">Maestría en Ingeniería del Software</option>
-                        </select>
-                    </div>
-                </div>
+	<!--Header-->
+	<header class="row center-xs middle-xs">
+		<div class="col-xs-12 col-sm-4">
+			<img src="images/momentos.svg" alt="Momentos en línea" class="box" width="100%">
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<img src="images/umvirtual.svg" alt="UM Virtual" class="box" width="100%">
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<img src="images/um.svg" alt="Universidad de Montemorelos" class="box" width="100%">
+		</div>
+	</header>
+	<!--/Header-->
 
-                <!-- Button -->
-                <div class="agile-group row center-xs">
-                    <div class="agile-field col-xs">
-                        <div class="box">
-                            <button type="submit" class="agile-button" tabindex="6">Solicitar Información</button><span id="agile-error-msg"></span>
-                        </div>
-                    </div>
-                </div>
-                <section id="respuesta">
-                
-                </section>
-            </fieldset>
-        </form>
-    </div>
-    <!-- /Modal -->
+	<!-- Modal -->
+	<div class="mask" role="dialog"></div>
+	<div class="modal" role="alert">
+		<button class="close" role="button">X</button>
+		<form class="form-view" id="agile-form" action="https://umvirtual.agilecrm.com/formsubmit" method="POST" accept-charset="UTF-8">
+			<fieldset>
+				<div>
+					<input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Momentos">
+					<input type="hidden" id="_agile_domain" name="_agile_domain" value="umvirtual">
+					<input type="hidden" id="_agile_api" name="_agile_api" value="nnrj2h9osqla66t5rf6h2ai1sr">
+					<input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="https://umvirtual.org/momentos/gracias.html">
+					<input type="hidden" id="_agile_form_id_tags" name="tags" value="momentos, lead, educación formal">
+					<input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5765026858139648">
+				</div>
+				<!-- Text input-->
+				<div class="agile-group required-control">
+					<div class="agile-field-xlarge agile-field">
+						<input id="nombre-3" name="first_name" type="text" placeholder="Nombre(s)" class="agile-height-default" required tabindex="1">
+					</div>
+					<div class="agile-custom-clear"></div>
+				</div>
+				<!-- Text input-->
+				<div class="agile-group required-control">
+					<div class="agile-field-xlarge agile-field">
+						<input id="Apellidos" name="last_name" type="text" placeholder="Apellidos" class="agile-height-default" required tabindex="2">
+					</div>
+					<div class="agile-custom-clear"></div>
+				</div>
+				<!-- Text input-->
+				<div class="agile-group required-control">
+					<div class="agile-field-xlarge agile-field">
+						<input id="email" name="email" type="email" placeholder="Correo electrónico" class="agile-height-default" required tabindex="3">
+					</div>
+					<div class="agile-custom-clear"></div>
+				</div>
+				<!-- Text input-->
+				<div class="agile-group">
+					<div class="agile-field-xlarge agile-field">
+						<input id="telefono" name="phone" type="tel" placeholder="Teléfono (Opcional)" class="agile-height-default" tabindex="4">
+					</div>
+					<div class="agile-custom-clear"></div>
+				</div>
+				<!-- Select Basic -->
+				<div class="agile-group">
+					<div class="agile-field-xlarge agile-field">
+						<select id="programa" name="Programa formal" class="agile-height-default" required tabindex="5">
+							<option value="">Programa</option>
+							<option value="Técnica en música">Técnica en Música</option>
+							<option value="Lic. Administración de empresas">Lic. Administración de Empresas</option>
+							<option value="Lic. en Teología">Lic. en Teología</option>
+							<option value="Maestría en Educación">Maestría en Educación</option>
+							<option value="Maestría en Recursos Humanos">Maestría en Recursos Humanos</option>
+							<option value="Maestría en Finanzas">Maestría en Finanzas</option>
+							<option value="Maestría en Relaciones familiares">Maestría en Relaciones familiares</option>
+							<option value="Maestría en Ingeniería del Software">Maestría en Ingeniería del Software</option>
+						</select>
+					</div>
+				</div>
 
-    <!--Momentos-->
-    <section class="row" id="momentos">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="box wow fadeIn" id="momento1">
-                <h2 class="wow bounceInDown" data-wow-delay=".8s">Momento de querer comenzar</h2>
-                <section class="wow rotateInUpLeft" data-wow-delay="1.2s">
-                    <img src="images/foto1.jpg" alt="Foto 1">
-                    <div>
-                        <h3>Daneley Lizarazo Sáenz</h3>
-                        <p>Docente del gobierno colombiano
-                            <br>Estudiante Maestría en Educación
-                        </p>
-                    </div>
-                    <img src="images/indicadores-01.svg" alt="indicador" class="indicador">
-                </section>
-                <img src="images/momento1.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".5s">
-                <div class="bkgcolor wow fadeInLeft" data-wow-delay=".1s"></div>
-            </div>
+				<!-- Button -->
+				<div class="agile-group row center-xs">
+					<div class="agile-field col-xs">
+						<div class="box">
+							<button type="submit" class="agile-button" tabindex="6">Solicitar Información</button><span id="agile-error-msg"></span>
+						</div>
+					</div>
+				</div>
+				<section id="respuesta">
 
-            <div class="box wow fadeIn" id="momento2">
-                <h2 class="wow bounceInDown" data-wow-delay="1s">Momento de buscar y dar click</h2>
-                <section class="wow rotateInUpLeft" data-wow-delay="1.4s">
-                    <img src="images/foto2.jpg" alt="Foto 2">
-                    <div>
-                        <h3>Jaime Joani Contreras May</h3>
-                        <p>Docente de artes
-                            <br>Estudiante Técnica en Enseñanza Musical
-                        </p>
-                    </div>
-                    <img src="images/indicadores-02.svg" alt="indicador" class="indicador">
-                </section>
-                <img src="images/momento2.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".7s" data-wow-duration="2s">
-                <div class="bkgcolor wow fadeInLeft" data-wow-delay=".3s"></div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="box wow fadeIn" id="momento3">
-                <h2 class="wow bounceInDown" data-wow-delay="1.2s">Momento de preguntar</h2>
-                <section class="wow rotateInUpLeft" data-wow-delay="1.6s">
-                    <img src="images/foto3.jpg" alt="Foto 3">
-                    <div>
-                        <h3>Josabeth Carrera mendiela</h3>
-                        <p>Asistente de Enfermería
-                            <br>Estudiante Licenciatura en Administración
-                        </p>
-                    </div>
-                    <img src="images/indicadores-03.svg" alt="indicador" class="indicador">
-                </section>
-                <img src="images/momento3.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".9s" data-wow-duration="2s">
-                <div class="bkgcolor wow fadeInLeft" data-wow-delay=".5s"></div>
-            </div>
-
-            <div class="box wow fadeIn" id="momento4">
-                <h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de conocer</h2>
-                <section class="wow rotateInUpLeft" data-wow-delay="1.8s">
-                    <img src="images/foto4.jpg" alt="Foto 4">
-                    <div>
-                        <h3>Michel Jacinto Da Silva</h3>
-                        <p>Misionero
-                            <br>Estudiante Licenciatura en Teología
-                        </p>
-                    </div>
-                    <img src="images/indicadores-04.svg" alt="indicador" class="indicador">
-                </section>
-                <img src="images/momento4.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay="1.1s" data-wow-duration="2s">
-                <div class="bkgcolor wow fadeInLeft" data-wow-delay=".7s"></div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-            <div class="box wow fadeIn" id="momento5">
-                <h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de decidir y crecer</h2>
-                <section class="wow rotateInUpLeft" data-wow-delay="1.8s">
-                    <img src="images/foto5.jpg" alt="Foto 5">
-                    <div>
-                        <h3>Eduardo José Liñan Berrio</h3>
-                        <p>Auditor ADRA
-                            <br>Estudiante Maestría en Finanzas
-                        </p>
-                    </div>
-                    <img src="images/indicadores-02.svg" alt="indicador" class="indicador">
-                    <img src="images/indicadores-05.svg" alt="indicador" class="indicador2">
-                </section>
-                <img src="images/momento5.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay="1.1s" data-wow-duration="2.3s">
-                <div class="bkgcolor wow fadeInLeft" data-wow-delay=".7s"></div>
-            </div>
-        </div>
+				</section>
+			</fieldset>
+		</form>
+	</div>
+	<!-- /Modal -->
+		
+	
+	<!--Video Modal-->
+	<div class="mask" role="dialog"></div>
+	<section id="video" role="alert">
+		    <button class="close box" role="button">X</button>
+			<iframe src="" frameborder="0" allowfullscreen></iframe>
+	</section>
+	<!--/Video Modal-->
+	
+	<!--Video-->
+    <section id="videoNew">
+	    <a class="mostrar" href="#"><img src="images/play.jpg" alt="Play Youtube" width="100%"></a>
+	    <h1>Estudia 100% en línea, en los momentos que tú decidas.</h1>
     </section>
-    
-    <section class="slider">
-        <div class="slider__inner">
-            <!--slides 1-->
-            <input checked type="radio" name="slider__radiobox" id="slider__radiobox--1" class="slider__radiobox slider__radiobox--1">
-            <label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--1"></label>
-            <label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--5"></label>
-            <label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--2"></label>
-            <!--slides 2-->
-            <input type="radio" name="slider__radiobox" id="slider__radiobox--2" class="slider__radiobox slider__radiobox--2">
-            <label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--2"></label>
-            <label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--1"></label>
-            <label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--3"></label>
-            <!--slides 3-->
-            <input type="radio" name="slider__radiobox" id="slider__radiobox--3" class="slider__radiobox slider__radiobox--3">
-            <label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--3"></label>
-            <label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--2"></label>
-            <label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--4"></label>
-            <!--slides 4-->
-            <input type="radio" name="slider__radiobox" id="slider__radiobox--4" class="slider__radiobox slider__radiobox--4">
-            <label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--4"></label>
-            <label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--3"></label>
-            <label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--5"></label>
-            <!--slides 5-->
-            <input type="radio" name="slider__radiobox" id="slider__radiobox--5" class="slider__radiobox slider__radiobox--5">
-            <label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--5"></label>
-            <label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--4"></label>
-            <label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--1"></label>
+	<!--/Video-->
+	
+	<!--CTA-->
+	<section class="row center-xs wow fadeIn" id="cta">
+		<div class="col-xs-12 col-sm-7 col-md-5">
+			<button class="box show wow rubberBand">Quiero comenzar a estudiar</button>
+		</div>
+	</section>
+	<!--/CTA-->
+	
+	<!--Párrafos-->
+	<section class="row center-xs" id="programas">
+		<div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInLeftBig">
+			<h2><img src="images/birrete.svg" alt="birrete">PREGRADO</h2>
+			<ul>
+			    <li>Licenciatura en Teología</li>
+			    <li>Licenciatura en Administración de Empresas</li>
+			    <li>Técnica en Enseñanza Musica</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInRightBig">
+			<h2><img src="images/birrete.svg" alt="birrete">POSGRADO</h2>
+			<ul>
+			    <li>Maestría en Educación</li>
+			    <li>Maestría en Finanzas</li>
+			    <li>Maestría en Recursos Humanos</li>
+			    <li>Maestría en Relaciones Familiares</li>
+			    <li>Maestría en Ingeniería del Software</li>
+			</ul>
+		</div>
+	</section>
+	<!--/Párrafos-->
 
-            <div class="slider__slides">
-                <!--slides 1-->
-                <div class="box wow fadeIn slider__slide slider__slide--1">
-                    <h2 class="wow bounceInDown" data-wow-delay=".8s">Momento de querer comenzar</h2>
-                    <section class="wow rotateInUpLeft" data-wow-delay="1.2s">
-                        <img src="images/foto1.jpg" alt="Foto 1">
-                        <div>
-                            <h3>Daneley Lizarazo Sáenz</h3>
-                            <p>Docente del gobierno colombiano
-                                <br>Estudiante Maestría en Educación
-                            </p>
-                        </div>
-                    </section>
-                </div>
+	<!--Momentos-->
+	<section class="row" id="momentos">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="box show wow fadeIn" id="momento1">
+				<h2 class="wow bounceInDown" data-wow-delay=".8s">Momento de querer comenzar</h2>
+				<section class="wow rotateInUpLeft" data-wow-delay="1.2s">
+					<img src="images/foto1.jpg" alt="Foto 1">
+					<div>
+						<h3>Daneley Lizarazo Sáenz</h3>
+						<p>Docente del gobierno colombiano
+							<br>Estudiante Maestría en Educación
+						</p>
+					</div>
+					<img src="images/indicadores-01.svg" alt="indicador" class="indicador">
+				</section>
+				<img src="images/momento1.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".5s">
+				<div class="bkgcolor wow fadeInLeft" data-wow-delay=".1s"></div>
+			</div>
 
-                <!--slides 2-->
-                <div class="box wow fadeIn slider__slide slider__slide--2">
-                    <h2 class="wow bounceInDown" data-wow-delay="1s">Momento de buscar y dar click</h2>
-                    <section class="wow rotateInUpLeft" data-wow-delay="1.4s">
-                        <img src="images/foto2.jpg" alt="Foto 2">
-                        <div>
-                            <h3>Jaime Joani Contreras May</h3>
-                            <p>Docente de artes
-                                <br>Estudiante Técnica en Enseñanza Musical
-                            </p>
-                        </div>
-                    </section>
-                </div>
+			<div class="box show wow fadeIn" id="momento2">
+				<h2 class="wow bounceInDown" data-wow-delay="1s">Momento de buscar y dar click</h2>
+				<section class="wow rotateInUpLeft" data-wow-delay="1.4s">
+					<img src="images/foto2.jpg" alt="Foto 2">
+					<div>
+						<h3>Jaime Joani Contreras May</h3>
+						<p>Docente de artes
+							<br>Estudiante Técnica en Enseñanza Musical
+						</p>
+					</div>
+					<img src="images/indicadores-02.svg" alt="indicador" class="indicador">
+				</section>
+				<img src="images/momento2.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".7s" data-wow-duration="2s">
+				<div class="bkgcolor wow fadeInLeft" data-wow-delay=".3s"></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="box show wow fadeIn" id="momento3">
+				<h2 class="wow bounceInDown" data-wow-delay="1.2s">Momento de preguntar</h2>
+				<section class="wow rotateInUpLeft" data-wow-delay="1.6s">
+					<img src="images/foto3.jpg" alt="Foto 3">
+					<div>
+						<h3>Josabeth Carrera mendiela</h3>
+						<p>Asistente de Enfermería
+							<br>Estudiante Licenciatura en Administración
+						</p>
+					</div>
+					<img src="images/indicadores-03.svg" alt="indicador" class="indicador">
+				</section>
+				<img src="images/momento3.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay=".9s" data-wow-duration="2s">
+				<div class="bkgcolor wow fadeInLeft" data-wow-delay=".5s"></div>
+			</div>
 
-                <!--slides 3-->
-                <div class="box wow fadeIn slider__slide slider__slide--3">
-                    <h2 class="wow bounceInDown" data-wow-delay="1.2s">Momento de preguntar</h2>
-                    <section class="wow rotateInUpLeft" data-wow-delay="1.6s">
-                        <img src="images/foto3.jpg" alt="Foto 3">
-                        <div>
-                            <h3>Josabeth Carrera mendiela</h3>
-                            <p>Asistente de Enfermería
-                                <br>Estudiante Licenciatura en Administración
-                            </p>
-                        </div>
-                    </section>
-                </div>
+			<div class="box show wow fadeIn" id="momento4">
+				<h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de conocer</h2>
+				<section class="wow rotateInUpLeft" data-wow-delay="1.8s">
+					<img src="images/foto4.jpg" alt="Foto 4">
+					<div>
+						<h3>Michel Jacinto Da Silva</h3>
+						<p>Misionero
+							<br>Estudiante Licenciatura en Teología
+						</p>
+					</div>
+					<img src="images/indicadores-04.svg" alt="indicador" class="indicador">
+				</section>
+				<img src="images/momento4.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay="1.1s" data-wow-duration="2s">
+				<div class="bkgcolor wow fadeInLeft" data-wow-delay=".7s"></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<div class="box show wow fadeIn" id="momento5">
+				<h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de decidir y crecer</h2>
+				<section class="wow rotateInUpLeft" data-wow-delay="1.8s">
+					<img src="images/foto5.jpg" alt="Foto 5">
+					<div>
+						<h3>Eduardo José Liñan Berrio</h3>
+						<p>Auditor ADRA
+							<br>Estudiante Maestría en Finanzas
+						</p>
+					</div>
+					<img src="images/indicadores-02.svg" alt="indicador" class="indicador">
+					<img src="images/indicadores-05.svg" alt="indicador" class="indicador2">
+				</section>
+				<img src="images/momento5.jpg" alt="Momento de querer comenzar" width="100%" height="100%" class="bkgimagen wow fadeInLeft" data-wow-delay="1.1s" data-wow-duration="2.3s">
+				<div class="bkgcolor wow fadeInLeft" data-wow-delay=".7s"></div>
+			</div>
+		</div>
+	</section>
 
-                <!--slides 4-->
-                <div class="box wow fadeIn slider__slide slider__slide--4">
-                    <h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de conocer</h2>
-                    <section class="wow rotateInUpLeft" data-wow-delay="1.8s">
-                        <img src="images/foto4.jpg" alt="Foto 4">
-                        <div>
-                            <h3>Michel Jacinto Da Silva</h3>
-                            <p>Misionero
-                                <br>Estudiante Licenciatura en Teología
-                            </p>
-                        </div>
-                    </section>
-                </div>
+	<section class="slider">
+		<div class="slider__inner">
+			<!--slides 1-->
+			<input checked type="radio" name="slider__radiobox" id="slider__radiobox--1" class="slider__radiobox slider__radiobox--1">
+			<label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--1"></label>
+			<label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--5"></label>
+			<label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--2"></label>
+			<!--slides 2-->
+			<input type="radio" name="slider__radiobox" id="slider__radiobox--2" class="slider__radiobox slider__radiobox--2">
+			<label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--2"></label>
+			<label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--1"></label>
+			<label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--3"></label>
+			<!--slides 3-->
+			<input type="radio" name="slider__radiobox" id="slider__radiobox--3" class="slider__radiobox slider__radiobox--3">
+			<label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--3"></label>
+			<label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--2"></label>
+			<label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--4"></label>
+			<!--slides 4-->
+			<input type="radio" name="slider__radiobox" id="slider__radiobox--4" class="slider__radiobox slider__radiobox--4">
+			<label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--4"></label>
+			<label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--3"></label>
+			<label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--5"></label>
+			<!--slides 5-->
+			<input type="radio" name="slider__radiobox" id="slider__radiobox--5" class="slider__radiobox slider__radiobox--5">
+			<label for="slider__radiobox--5" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--5"></label>
+			<label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--4"></label>
+			<label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--1"></label>
 
-                <!--slides 5-->
-                <div class="box wow fadeIn slider__slide slider__slide--5">
-                    <h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de decidir y crecer</h2>
-                    <section class="wow rotateInUpLeft" data-wow-delay="1.8s">
-                        <img src="images/foto5.jpg" alt="Foto 5">
-                        <div>
-                            <h3>Eduardo José Liñan Berrio</h3>
-                            <p>Auditor ADRA
-                                <br>Estudiante Maestría en Finanzas
-                            </p>
-                        </div>
-                    </section>
-                </div>
+			<div class="slider__slides">
+				<!--slides 1-->
+				<div class="box wow fadeIn slider__slide slider__slide--1">
+					<h2 class="wow bounceInDown" data-wow-delay=".8s">Momento de querer comenzar</h2>
+					<section class="wow rotateInUpLeft" data-wow-delay="1.2s">
+						<img src="images/foto1.jpg" alt="Foto 1">
+						<div>
+							<h3>Daneley Lizarazo Sáenz</h3>
+							<p>Docente del gobierno colombiano
+								<br>Estudiante Maestría en Educación
+							</p>
+						</div>
+					</section>
+				</div>
 
-            </div>
-            <!--.slider__slides-->
-        </div>
-        <!--.slider__inner-->
-    </section>
-    <!--.slider-->
-    
-    <!--/Momentos-->
+				<!--slides 2-->
+				<div class="box wow fadeIn slider__slide slider__slide--2">
+					<h2 class="wow bounceInDown" data-wow-delay="1s">Momento de buscar y dar click</h2>
+					<section class="wow rotateInUpLeft" data-wow-delay="1.4s">
+						<img src="images/foto2.jpg" alt="Foto 2">
+						<div>
+							<h3>Jaime Joani Contreras May</h3>
+							<p>Docente de artes
+								<br>Estudiante Técnica en Enseñanza Musical
+							</p>
+						</div>
+					</section>
+				</div>
 
-    <!--CTA-->
-    <section class="row center-xs wow fadeIn" id="cta">
-        <div class="col-xs-12 col-sm-7 col-md-5">
-            <button class="box show wow rubberBand">Quiero comenzar a estudiar</button>
-        </div>
-    </section>
-    <!--/CTA-->
+				<!--slides 3-->
+				<div class="box wow fadeIn slider__slide slider__slide--3">
+					<h2 class="wow bounceInDown" data-wow-delay="1.2s">Momento de preguntar</h2>
+					<section class="wow rotateInUpLeft" data-wow-delay="1.6s">
+						<img src="images/foto3.jpg" alt="Foto 3">
+						<div>
+							<h3>Josabeth Carrera mendiela</h3>
+							<p>Asistente de Enfermería
+								<br>Estudiante Licenciatura en Administración
+							</p>
+						</div>
+					</section>
+				</div>
 
-    <!--Bolitas-->
-    <section class="row center-xs" id="bolitas">
-        <div class="col-xs-12 col-sm-7 col-md-5">
-            <div class="box">
-                <div class="bolita1 wow bounceInDown" data-wow-delay=".2s"></div>
-                <div class="bolita2 wow bounceInDown" data-wow-delay=".4s"></div>
-                <div class="bolita3 wow bounceInDown" data-wow-delay=".6s"></div>
-                <div class="bolita4 wow bounceInDown" data-wow-delay=".8s"></div>
-                <div class="bolita5 wow bounceInDown" data-wow-delay="1s"></div>
-            </div>
-        </div>
-    </section>
-    <!--/Bolitas-->
+				<!--slides 4-->
+				<div class="box wow fadeIn slider__slide slider__slide--4">
+					<h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de conocer</h2>
+					<section class="wow rotateInUpLeft" data-wow-delay="1.8s">
+						<img src="images/foto4.jpg" alt="Foto 4">
+						<div>
+							<h3>Michel Jacinto Da Silva</h3>
+							<p>Misionero
+								<br>Estudiante Licenciatura en Teología
+							</p>
+						</div>
+					</section>
+				</div>
 
-    <!--Qoute-->
-    <section class="row center-xs wow fadeIn" id="qoute">
-        <div class="col-xs-12 col-sm-8">
-            <p class="box">“El tiempo pasa sin detenerse, la vida plena se forma por significativos espacios de tiempo que se convierten en momentos que impactan tu futuro y los que te rodean.”</p>
-        </div>
-    </section>
-    <!--/Qoute-->
+				<!--slides 5-->
+				<div class="box wow fadeIn slider__slide slider__slide--5">
+					<h2 class="wow bounceInDown" data-wow-delay="1.4s">Momento de decidir y crecer</h2>
+					<section class="wow rotateInUpLeft" data-wow-delay="1.8s">
+						<img src="images/foto5.jpg" alt="Foto 5">
+						<div>
+							<h3>Eduardo José Liñan Berrio</h3>
+							<p>Auditor ADRA
+								<br>Estudiante Maestría en Finanzas
+							</p>
+						</div>
+					</section>
+				</div>
 
-    <!--Beneficios-->
-    <section class="row" id="beneficios">
-        <div class="col-xs-12 wow fadeInRightBig">
-            <div class="box">
-                <div class="row center-xs middle-sm start-sm center-lg">
-                    <div class="col-xs-6 col-sm-2 end-sm col-lg-1">
-                        <img src="images/beneficios-01.svg" alt="tiempo" class="box">
-                    </div>
-                    <div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
-                        <p class="box">¿Aprovechas cada espacio de tiempo?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 wow fadeInRightBig" data-wow-delay=".2s">
-            <div class="box">
-                <div class="row center-xs middle-sm start-sm center-lg">
-                    <div class="col-xs-6 col-sm-2 end-sm col-lg-1">
-                        <img src="images/beneficios-02.svg" alt="Preyección" class="box">
-                    </div>
-                    <div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
-                        <p class="box">¿Proyectas tus momentos hacia la nueva realidad de este mundo?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 wow fadeInRightBig" data-wow-delay=".4s">
-            <div class="box">
-                <div class="row center-xs middle-sm start-sm center-lg">
-                    <div class="col-xs-6 col-sm-2 end-sm col-lg-1">
-                        <img src="images/beneficios-03.svg" alt="Vida" class="box">
-                    </div>
-                    <div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
-                        <p class="box">¿Le das sentido a tu vida?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/Beneficios-->
+			</div>
+			<!--.slider__slides-->
+		</div>
+		<!--.slider__inner-->
+	</section>
+	<!--.slider-->
 
-    <!--Párrafos-->
-    <section class="row center-xs" id="parrafos">
-        <div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInLeftBig">
-            <p class="box">UM Virtual te ofrece la oportunidad de prepararte profesionalmente y colaborar contigo en aprovechar, proyectar y darle sentido a tu vida.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInRightBig">
-            <p class="box">Puedes iniciar o continuar tu preparación profesional sin trasladarte a un campus, dedicando espacios de tiempo en línea para crecer y desarrollarte hacia una nueva calidad.</p>
-        </div>
-    </section>
-    <!--/Párrafos-->
+	<!--/Momentos-->
 
-    <!--Video-->
-    <section class="row center-xs wow zoomIn" id="video">
-        <div class="col-xs-12 col-sm-10 col-md-8">
-            <iframe class="box" src="https://www.youtube-nocookie.com/embed/j6UIlgu3UYg?rel=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-    <!--/Video-->
+	
 
-    <!--Testimonios-->
-    <section class="row center-xs" id="testimonios">
-        <div class="col-xs-12">
-            <h2 class="box wow fadeIn">Queremos ayudarte como a ellos, estamos en línea para atender tus momentos…</h2>
-        </div>
-        <!--Columna 1-->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".1s">
-            <div class="box">
-                <img src="images/foto1.jpg" alt="Daneley Lizarazo Sáenz">
-                <h3>Daneley Lizarazo Sáenz</h3>
-                <p>“Decidí estudiar en UM Virtual (Universidad de Montemorelos en línea) por dos razones fundamentales; en primer lugar quiero apoyar la educación con principios adventistas, y por otro lado, reconozco la calidad educativa y el renombre mundial que tiene esta universidad.”</p>
-            </div>
-        </div>
-        <!--Columna 2-->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".2s">
-            <div class="box">
-                <img src="images/foto3.jpg" alt="Josabeth Carrera mendiela">
-                <h3>Josabeth Carrera mendiela</h3>
-                <p>
-                    "Estudio en la UM virtual porque me brinda la flexibilidad que necesito para continuar educándome sin dejar de realizar mis obligaciones laborales."</p>
-            </div>
-        </div>
-        <!--Columna 3-->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".3s">
-            <div class="box">
-                <img src="images/foto2.jpg" alt="Jaime Joani Contreras May">
-                <h3>Jaime Joani Contreras May</h3>
-                <p>“Porque para poder superarme, estudiar en línea es la mejor opción para continuar con mis estudios por la disponibilidad de horarios y contenidos.”</p>
-            </div>
-        </div>
-        <!--Columna 4-->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".4s">
-            <div class="box">
-                <img src="images/foto4.jpg" alt="Michel Jacinto Da Silva">
-                <h3>Michel Jacinto Da Silva</h3>
-                <p>“UM Virtual me permite prepararme sin necesidad de dejar de trabajar o descuidar a mi familia. Además que es una universidad de calidad.”</p>
-            </div>
-        </div>
-        <!--Columna 5-->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".5s">
-            <div class="box">
-                <img src="images/foto5.jpg" alt="Eduardo José Liñan Berrio">
-                <h3>Eduardo José Liñan Berrio</h3>
-                <p>“Escogí a UM Virtual por su prestigio y calidad, esta fue una elección que respondía a mi búsqueda de experiencia y universalidad. Me siento orgulloso de formar parte de ella.”</p>
-            </div>
-        </div>
-    </section>
-    <!--/Testimonios-->
+	<!--Bolitas-->
+	<section class="row center-xs" id="bolitas">
+		<div class="col-xs-12 col-sm-7 col-md-5">
+			<div class="box">
+				<div class="bolita1 wow bounceInDown" data-wow-delay=".2s"></div>
+				<div class="bolita2 wow bounceInDown" data-wow-delay=".4s"></div>
+				<div class="bolita3 wow bounceInDown" data-wow-delay=".6s"></div>
+				<div class="bolita4 wow bounceInDown" data-wow-delay=".8s"></div>
+				<div class="bolita5 wow bounceInDown" data-wow-delay="1s"></div>
+			</div>
+		</div>
+	</section>
+	<!--/Bolitas-->
 
-    <!--CTA2-->
-    <section class="row center-xs start-sm middle-sm" id="cta2">
-        <div class="col-xs-2 col-lg-offset-1 col-lg-1">
-            <img src="images/bolitas.svg" alt="Bolitas" width="100%" class="box bolitas">
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-5">
-            <p class="box">
-                ¡únete a nosotros!
-                <br> Queremos ser parte de tus momentos.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-3 end-lg">
-            <button class="box show wow rubberBand">Quiero comenzar a estudiar</button>
-        </div>
-    </section>
-    <!--/CTA2-->
+	<!--Qoute-->
+	<section class="row center-xs wow fadeIn" id="qoute">
+		<div class="col-xs-12 col-sm-8">
+			<p class="box">“El tiempo pasa sin detenerse, la vida plena se forma por significativos espacios de tiempo que se convierten en momentos que impactan tu futuro y los que te rodean.”</p>
+		</div>
+	</section>
+	<!--/Qoute-->
 
-    <!--footer-->
-    <footer class="row">
-        <div class="col-xs-6 end-xs">
-            <a href="https://www.facebook.com/umvirtual"><img src="images/facebook.svg" alt="Facebook" class="box sm"></a>
-        </div>
-        <div class="col-xs-6 start-xs">
-            <a href="https://www.twitter.com/umvirtual"><img src="images/twitter.svg" alt="Twitter" class="box sm"></a>
-        </div>
-        <div class="col-xs-12">
-            <p class="box">© 2017 Universidad de Montemorelos, Todos los derechos reservados. </p>
-        </div>
-        <div class="col-xs-12">
-            <div class="box center-xs">
-                <div class="row middle-xs center-sm">
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="images/marca-umvirtual.svg" alt="UM Virtual" class="box logo">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="images/marca-momentos-en-linea.svg" alt="Momentos en línea" class="box logo">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="images/uni.svg" alt="Universidad de Montemorelos" class="box logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/CTA2-->
+	<!--Beneficios-->
+	<section class="row" id="beneficios">
+		<div class="col-xs-12 wow fadeInRightBig">
+			<div class="box">
+				<div class="row center-xs middle-sm start-sm center-lg">
+					<div class="col-xs-6 col-sm-2 end-sm col-lg-1">
+						<img src="images/beneficios-01.svg" alt="tiempo" class="box">
+					</div>
+					<div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
+						<p class="box">¿Aprovechas cada espacio de tiempo?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 wow fadeInRightBig" data-wow-delay=".2s">
+			<div class="box">
+				<div class="row center-xs middle-sm start-sm center-lg">
+					<div class="col-xs-6 col-sm-2 end-sm col-lg-1">
+						<img src="images/beneficios-02.svg" alt="Preyección" class="box">
+					</div>
+					<div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
+						<p class="box">¿Proyectas tus momentos hacia la nueva realidad de este mundo?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 wow fadeInRightBig" data-wow-delay=".4s">
+			<div class="box">
+				<div class="row center-xs middle-sm start-sm center-lg">
+					<div class="col-xs-6 col-sm-2 end-sm col-lg-1">
+						<img src="images/beneficios-03.svg" alt="Vida" class="box">
+					</div>
+					<div class="col-xs-12 col-sm-10 col-lg-6 start-sm">
+						<p class="box">¿Le das sentido a tu vida?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Beneficios-->
 
-    <script src="https://umvirtual.org/bower_components/wow/dist/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="https://umvirtual.org/bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Formulario -->
-    <script src="https://raw.githubusercontent.com/matmancini/html5form/master/dist/html5form.min.js" type="text/plain"></script>
-    <script src="js/min/programacion-min.js"></script>
-    <!-- Google Code para analitycs -->
-    <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-49916110-1']);
-        _gaq.push(['_trackPageview']);
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-    
-    <!-- Google Code para etiquetas de remarketing -->
-    <script>
-        /* <![CDATA[ */
-        var google_conversion_id = 957296960;
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-    </script>
-    <script src="https:////www.googleadservices.com/pagead/conversion.js">
-    </script>
-    <noscript>
-        <div style="display:inline;">
-            <img height="1" width="1" style="border-style:none;" alt="Doble click" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/957296960/?value=0&amp;guid=ON&amp;script=0" />
-        </div>
-    </noscript>
-    <!-- End Google Code para etiquetas de remarketing -->
+	<!--Párrafos-->
+	<section class="row center-xs" id="parrafos">
+		<div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInLeftBig">
+			<p class="box">UM Virtual te ofrece la oportunidad de prepararte profesionalmente y colaborar contigo en aprovechar, proyectar y darle sentido a tu vida.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-4 wow fadeInRightBig">
+			<p class="box">Puedes iniciar o continuar tu preparación profesional sin trasladarte a un campus, dedicando espacios de tiempo en línea para crecer y desarrollarte hacia una nueva calidad.</p>
+		</div>
+	</section>
+	<!--/Párrafos-->
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window,
-            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+	
 
-        fbq('init', '954439487953611');
-        fbq('track', "PageView");
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=954439487953611&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
-    
-    <!-- Tracking Code de Agile CRM-->
-    <script type="text/javascript" src="https://umvirtual.agilecrm.com/stats/min/agile-min.js"></script> 
-    <script type="text/javascript" > 
-        _agile.set_account('nnrj2h9osqla66t5rf6h2ai1sr', 'umvirtual'); 
-        _agile.track_page_view(); 
-        _agile_execute_web_rules(); 
-    </script>
-    <!-- /Tracking Code de Agile CRM-->
+	<!--Testimonios-->
+	<section class="row center-xs" id="testimonios">
+		<div class="col-xs-12">
+			<h2 class="box wow fadeIn">Queremos ayudarte como a ellos, estamos en línea para atender tus momentos…</h2>
+		</div>
+		<!--Columna 1-->
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".1s">
+			<div class="box">
+				<img src="images/foto1.jpg" alt="Daneley Lizarazo Sáenz">
+				<h3>Daneley Lizarazo Sáenz</h3>
+				<p>“Decidí estudiar en UM Virtual (Universidad de Montemorelos en línea) por dos razones fundamentales; en primer lugar quiero apoyar la educación con principios adventistas, y por otro lado, reconozco la calidad educativa y el renombre mundial que tiene esta universidad.”</p>
+			</div>
+		</div>
+		<!--Columna 2-->
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".2s">
+			<div class="box">
+				<img src="images/foto3.jpg" alt="Josabeth Carrera mendiela">
+				<h3>Josabeth Carrera mendiela</h3>
+				<p>
+					"Estudio en la UM virtual porque me brinda la flexibilidad que necesito para continuar educándome sin dejar de realizar mis obligaciones laborales."</p>
+			</div>
+		</div>
+		<!--Columna 3-->
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".3s">
+			<div class="box">
+				<img src="images/foto2.jpg" alt="Jaime Joani Contreras May">
+				<h3>Jaime Joani Contreras May</h3>
+				<p>“Porque para poder superarme, estudiar en línea es la mejor opción para continuar con mis estudios por la disponibilidad de horarios y contenidos.”</p>
+			</div>
+		</div>
+		<!--Columna 4-->
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".4s">
+			<div class="box">
+				<img src="images/foto4.jpg" alt="Michel Jacinto Da Silva">
+				<h3>Michel Jacinto Da Silva</h3>
+				<p>“UM Virtual me permite prepararme sin necesidad de dejar de trabajar o descuidar a mi familia. Además que es una universidad de calidad.”</p>
+			</div>
+		</div>
+		<!--Columna 5-->
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 wow bounceInUp" data-wow-delay=".5s">
+			<div class="box">
+				<img src="images/foto5.jpg" alt="Eduardo José Liñan Berrio">
+				<h3>Eduardo José Liñan Berrio</h3>
+				<p>“Escogí a UM Virtual por su prestigio y calidad, esta fue una elección que respondía a mi búsqueda de experiencia y universalidad. Me siento orgulloso de formar parte de ella.”</p>
+			</div>
+		</div>
+	</section>
+	<!--/Testimonios-->
+
+	<!--CTA2-->
+	<section class="row center-xs start-sm middle-sm" id="cta2">
+		<div class="col-xs-2 col-lg-offset-1 col-lg-1">
+			<img src="images/bolitas.svg" alt="Bolitas" width="100%" class="box bolitas">
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-5">
+			<p class="box">
+				¡únete a nosotros!
+				<br> Queremos ser parte de tus momentos.
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-3 end-lg">
+			<button class="box show wow rubberBand">Quiero comenzar a estudiar</button>
+		</div>
+	</section>
+	<!--/CTA2-->
+
+	<!--footer-->
+	<footer class="row">
+		<div class="col-xs-6 end-xs">
+			<a href="https://www.facebook.com/umvirtual"><img src="images/facebook.svg" alt="Facebook" class="box sm">
+			</a>
+		</div>
+		<div class="col-xs-6 start-xs">
+			<a href="https://www.twitter.com/umvirtual"><img src="images/twitter.svg" alt="Twitter" class="box sm">
+			</a>
+		</div>
+		<div class="col-xs-12">
+			<p class="box">© 2017 Universidad de Montemorelos, Todos los derechos reservados. </p>
+		</div>
+		<div class="col-xs-12">
+			<div class="box center-xs">
+				<div class="row middle-xs center-sm">
+					<div class="col-xs-4 col-sm-2">
+						<img src="images/marca-umvirtual.svg" alt="UM Virtual" class="box logo">
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<img src="images/marca-momentos-en-linea.svg" alt="Momentos en línea" class="box logo">
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<img src="images/uni.svg" alt="Universidad de Montemorelos" class="box logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/CTA2-->
+
+	<script src="https://umvirtual.org/bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="https://umvirtual.org/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Formulario -->
+	<script src="https://raw.githubusercontent.com/matmancini/html5form/master/dist/html5form.min.js" type="text/plain"></script>
+	<script src="js/min/programacion-min.js"></script>
+	<!-- Google Code para analitycs -->
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-49916110-1']);
+		_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<!-- Google Code para etiquetas de remarketing -->
+	<script>
+		/* <![CDATA[ */
+		var google_conversion_id = 957296960;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script src="https:////www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="Doble click" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/957296960/?value=0&amp;guid=ON&amp;script=0" />
+		</div>
+	</noscript>
+	<!-- End Google Code para etiquetas de remarketing -->
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '954439487953611');
+		fbq('track', "PageView");
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=954439487953611&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Tracking Code de Agile CRM-->
+	<script type="text/javascript" src="https://umvirtual.agilecrm.com/stats/min/agile-min.js"></script>
+	<script type="text/javascript">
+		_agile.set_account('nnrj2h9osqla66t5rf6h2ai1sr', 'umvirtual');
+		_agile.track_page_view();
+		_agile_execute_web_rules();
+	</script>
+	<!-- /Tracking Code de Agile CRM-->
+
+	<!-- Tracking Code Smart look-->
+	<script type="text/javascript">
+		window.smartlook || (function (d) {
+			var o = smartlook = function () {
+					o.api.push(arguments)
+				},
+				h = d.getElementsByTagName('head')[0];
+			var c = d.createElement('script');
+			o.api = new Array();
+			c.async = true;
+			c.type = 'text/javascript';
+			c.charset = 'utf-8';
+			c.src = 'https://rec.smartlook.com/recorder.js';
+			h.appendChild(c);
+		})(document);
+		smartlook('init', '67174881a02c0f1d15b0c3286ba308ccc71b58a2');
+	</script>
+	<!--/Tracking Code Smart look-->
+
 </body>
 
 </html>
